@@ -26,6 +26,30 @@
    <body>
    <div>
 
+	  
+<!--
+<nav class="navbar navbar-default navbar-fixed-to">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggl" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"></a>
+    </div>
+    <!--<div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>-->
 
 
 <div class="jumbotron text-center">
@@ -36,12 +60,11 @@
  <div class="row">
     <div class="col-sm-4"></div>
     <div class="col-sm-3">
-        <center><form action = "http://localhost:5000/uploader" method="post"  enctype="multipart/form-data">
-            <input type="file" id="files" class="text-center" name="file" required></input>
+        <center><label>Your File is Ready For Download Click Below</label>
             <p style="text-align: right; margin-top: 20px;">
-                <center><input type="submit" value="Upload Files" class="btn btn-md btn-primary" /></center>
+                <center><a href="/downloader/"><button class="btn btn-md btn-primary">Download </button></a></center>
             </p>
-        </form></center>
+        </center>
     </div>
     <div class="col-sm-5"></div>
 	</div>
@@ -51,11 +74,7 @@
 <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
 <script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
 
-<script type="text/javascript">
-    jQuery(function ($) {
-        $("#files").shieldUpload();
-    });
-</script>
+
   <p class="file-return"></p>
 </form>
 	  
